@@ -70,6 +70,7 @@ When using `git reset --hard HEAD~1`  or `git reset --soft HEAD^`, you will lose
 
 - `git branch < branch name>` : `git branch cat`
 - `git checkout -b  <branch name>` : Creates the branch and checks it out in the same command
+- `git push <remote name> <branch name>` : Pushes the local branch to remote 
 - `git branch` : to see which branch you are currently on 
 - `git checkout <branch name >`: to jump to a specified branch
 - `git checkout cat` : head will be now on cat branch 
