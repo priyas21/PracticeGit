@@ -71,7 +71,7 @@ When using `git reset --hard HEAD~1`  or `git reset --soft HEAD^`, you will lose
 - `git branch < branch name>` : `git branch cat`
 - `git checkout -b  <branch name>` : Creates the branch and checks it out in the same command
 - `git push <remote name> <branch name>` : Pushes the local branch to remote 
-- `git branch` : to see which branch you are currently on 
+- `git branch` : to see which branch you are currently on (all the local branches)
 - `git checkout <branch name >`: to jump to a specified branch
 - `git checkout cat` : head will be now on cat branch 
   - echo “persian cat”> cat.txt :-> it will add persian cat to cat text file 
@@ -84,9 +84,9 @@ When using `git reset --hard HEAD~1`  or `git reset --soft HEAD^`, you will lose
   - `git commit -m  "Remove duplicated directory"`
   - `git push origin <your-git-branch> (typically 'master', but not always)`
   
-  ## Pull and Fetch Commands
-  
-  - `git pull` : Fetch or sync local reposirory with remote one
+## Pull and Fetch Commands
+
+- `git pull` : Fetch or sync local reposirory with remote one
      - its `git fetch` followed by `git merge`
      - Its not gonna update our local repo 
      - It will merge origin/master( remote branch) with master(local)
