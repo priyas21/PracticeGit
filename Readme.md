@@ -71,6 +71,9 @@ When using `git reset --hard HEAD~1`  or `git reset --soft HEAD^`, you will lose
 - `git checkout cat` : head will be now on cat branch 
   - echo “persian cat”> cat.txt :-> it will add persian cat to cat text file 
 - `ls` : list all the files in current directory 
+- `git merge <branch name>` : will merge all the changes from current branch to master 
+  - first do `git checkout master`, then merge the branch
+  - `git branch -d <branch name>`:  Remove the branch after merging it safely
 
 
 
