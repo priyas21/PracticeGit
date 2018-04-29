@@ -30,6 +30,7 @@ Bash Profile : This file is loaded before Terminal loads your shell environment 
 - `git add doc/ *.txt` : add all text files in doc directory
 - `git add doc/` : add all files in doc directory
 - `git add “*.txt”` : add all text files in whole project
+### .......................................................................................................................................................
 
 - `git diff`  : show the unstated differences since last commit; show the lines added and deleted/ modified in the files 
 - `git diff --staged` : View the staged differences 
@@ -49,7 +50,7 @@ This is the default mode and quite similar to soft. When "removing" a commit wit
 ### hard
 When using `git reset --hard HEAD~1`  or `git reset --soft HEAD^`, you will lose the changes introduced in the last commit. The changes won't stay in your working tree so doing a git status command will tell you that you don't have any changes in your repository.
 - `git reset --hard HEAD^^`  : blow away the last two commits and changes
-
+### .......................................................................................................................................................
 - `git commit --amend -m <Commit message>` : Adding to last commit and can also change the last commit message; only the tracked files can be added (NOTE : Don’t do after push command)
 - `git remote add origin <url of git hub repo>` : adding the remote ; origin is the name of the remote repo
 - `git remote -v` : shows remote repositories that our local git repo knows about 
