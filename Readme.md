@@ -4,18 +4,18 @@ The Repository is just for practicing git and its various commands  .
 
 
 
-#Git
+# Git
 
 Git is a distributed version control system; everybody has a copy of repository ; its not centralised 
-Git GUI link : http://git-scm.com
+[Git GUI link] : (http://git-scm.com)
 Open bash profile in atom : atom ~/ .bash_profile
 Open all the files:  ls -la ~/
 Bash Profile : This file is loaded before Terminal loads your shell environment and contains all the startup configuration and preferences for your command line interface.
 
 
-##Git Commands
-git status :-> to check whats changes since last commit
-git add <file name> <file name>: Add files to staging area
+## Git Commands
+- ' git status ' :-> to check whats changes since last commit
+-  ' git add <file name> <file name> ': Add files to staging area
 git add - -all : Add all the modified and new files to staging area
 git commit - m : Commit all staged files with a one line message
 git commit : to add multiline comment
@@ -23,7 +23,7 @@ Will open a default text editor which is vim
 Add the comment > then press esc> then write :wq to save and quit the commit message
 git log: to see the history of commits 
 
-##Different ways to add
+## Different ways to add
 git add <list of files>. : add all list of files
 git add - - all : add all untracked files 
 git add *.txt : add all text files in current directory
@@ -40,7 +40,7 @@ git checkout — <filename> : to discard all the changes in the working director
 git commit -a -m <commit message> : Shortcut to add and commit in one line 
 Note : The above command will only add tracked file; means the files which are added 
 
-##Git reset Commands  
+## Git reset Commands  
 NOTE : Don’t do after push command
 soft
 When using git reset --soft HEAD~1 you will undo the last commit, but the file changes will stay in your working tree. Also the changes will stay on your index, so following with a git commit will create a commit with the exact same changes as the commit you "removed" before. Moves back to staging; moves to commit one before current HEAD
@@ -60,7 +60,7 @@ git clone <remote repo url> <local folder name/optional>
 git clone https://github.com/PriyaSodhi/Ruby_Tutorial.git demo-repo 
 
 
-##Working on Branch commands 
+## Working on Branch commands 
 
 If you want to work on some feature > use branches ; a different timeline 
 
