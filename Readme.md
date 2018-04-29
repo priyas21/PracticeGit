@@ -76,9 +76,9 @@ When using `git reset --hard HEAD~1`  or `git reset --soft HEAD^`, you will lose
   - first do `git checkout master`, then merge the branch
 - `git branch -d <branch name>`:  Remove the local branch after merging it safely
 - `git push -d <remote name> <branch name>` : Deletes the branch remotely 
-- `git rm -r <Directory/folder name>` : Removes the directory local and remote 
- - `git commit -m  "Remove duplicated directory"`
- - `git push origin <your-git-branch> (typically 'master', but not always)`
+- `git rm -r <Directory/folder name/file name>` : Removes the directory local and remote 
+  - `git commit -m  "Remove duplicated directory"`
+  - `git push origin <your-git-branch> (typically 'master', but not always)`
 
 
 
