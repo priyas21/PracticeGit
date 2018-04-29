@@ -22,6 +22,9 @@ Bash Profile : This file is loaded before Terminal loads your shell environment 
    - Will open a default text editor which is vim 
    - Add the comment > then press esc> then write :wq to save and quit the commit message
 - `git log`: to see the history of commits 
+- `git log oneline` : Will show all the commits with their first line message
+- `git show` : WIll show the current HEAD
+- `git show 3b7666e` : Means shows the specified sha /commit
 
 ## Different ways to add
 - `git add <list of files>` : add all list of files
@@ -79,6 +82,14 @@ When using `git reset --hard HEAD~1`  or `git reset --soft HEAD^`, you will lose
 - `git rm -r <Directory/folder name/file name>` : Removes the directory local and remote 
   - `git commit -m  "Remove duplicated directory"`
   - `git push origin <your-git-branch> (typically 'master', but not always)`
+  
+  ## Pull and Fetch Commands
+  
+  - `git pull` : Fetch or sync local reposirory with remote one
+     - its `git fetch` followed by `git merge`
+     - Its not gonna update our local repo 
+     - It will merge origin/master( remote branch) with master(local)
+  
 
 
 
