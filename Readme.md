@@ -1,3 +1,3 @@
 ---Readme File---
 
-The Repository contains the basic concepts of Ruby .
+The Repository is just for practicing git and its various commands  .
