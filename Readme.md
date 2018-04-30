@@ -107,3 +107,12 @@ If we are working on large project which have various versions we can use tags t
  - its `git fetch` followed by `git merge`
  - Its not gonna update our local repo 
  - It will merge origin/master( remote branch) with master(local)
+ - `git fetch` : Pulls downs the changes from remote to local but does not merge them.  
+ 
+ ## Rebase
+  
+ -First Run `git fetch` first which will pull down all the remote changes but does not merge them
+- Then run `git rebase` 
+   - Move all changes to master which are not in origin/master to a temporary area
+   - Run all origin/master commits
+   - Run all commits in temporary area , one at a time on top of master 
