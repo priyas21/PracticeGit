@@ -69,6 +69,15 @@ When using `git reset --hard HEAD~1`  or `git reset --soft HEAD^`, you will lose
 - `git clone <remote repo url> <local folder name/optional>`
 - git clone https://github.com/PriyaSodhi/Ruby_Tutorial.git demo-repo 
 
+## Tagging 
+
+If we are working on large project which have various versions we can use tags to tranfer to different versions of app
+
+- `git tag -a <tag name> -m <tag description>` : '`git tag -a v0.0.3 -m "Version 0.0.3"`  :-> Add the tag
+- `git tag` : List all tags
+- `git checkout v0.0.3` : Checkout the tag
+- `git push --tags` : Push new tags to remote repo
+
 
 ## Working on Branch commands 
 
@@ -86,7 +95,8 @@ When using `git reset --hard HEAD~1`  or `git reset --soft HEAD^`, you will lose
 - `git merge <branch name>` : will merge all the changes from current branch to master 
  - first do `git checkout master`, then merge the branch
 - `git branch -d <branch name>`:  Remove the local branch after merging it safely
-- `git push -d <remote name> <branch name>` : Deletes the branch remotely 
+- `git branch -D <branch name>` : Forcely deletes the local branch
+- `git push -d <remote name> <branch name>`  OR  `git push origin :<branch name>` : Deletes the branch remotely 
 - `git rm -r <Directory/folder name/file name>` : Removes the directory local and remote 
   - `git commit -m  "Remove duplicated directory"`
   - `git push origin <your-git-branch> (typically 'master', but not always)`
