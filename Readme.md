@@ -55,9 +55,15 @@ When using `git reset --hard HEAD~1`  or `git reset --soft HEAD^`, you will lose
 - `git reset --hard HEAD^^`  : blow away the last two commits and changes
 ### .......................................................................................................................................................
 - `git commit --amend -m <Commit message>` : Adding to last commit and can also change the last commit message; only the tracked files can be added (NOTE : Don’t do after push command)
+
+## Remote Commands
 - `git remote add origin <url of git hub repo>` : adding the remote ; origin is the name of the remote repo
 - `git remote -v` : shows remote repositories that our local git repo knows about 
 - `git remote rm <remote name > (git remote rm origin)`: Remove the remote 
+- `git remote show <remote name>` : Eg : `git remote show origin` 
+   - Will Show all the remote branches and show whether they are tracked or not
+   - show all local branches and which remote branches they are merged with 
+   - Shows the local branches which are configured for `git push`
 - `git push -u origin master` : push the changes to remote repo ; origin is remote repo name and master is local branch name ; - u means next time we use push we don’t have to specify the name of the local branch ; we can do git push 
 - `git pull` : Pull down the changes from the remote 
 - `git clone <remote repo url> <local folder name/optional>`
@@ -72,6 +78,7 @@ When using `git reset --hard HEAD~1`  or `git reset --soft HEAD^`, you will lose
 - `git checkout -b  <branch name>` : Creates the branch and checks it out in the same command
 - `git push <remote name> <branch name>` : Pushes the local branch to remote 
 - `git branch` : to see which branch you are currently on (all the local branches)
+- `git branch -r ` : WIll show all the remote branches 
 - `git checkout <branch name >`: to jump to a specified branch
 - `git checkout cat` : head will be now on cat branch 
 - echo “persian cat”> cat.txt :-> it will add persian cat to cat text file 
