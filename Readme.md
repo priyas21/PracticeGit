@@ -77,7 +77,6 @@ When using `git reset --hard HEAD~1`  or `git reset --soft HEAD^`, you will lose
 - echo “persian cat”> cat.txt :-> it will add persian cat to cat text file 
 - `ls` : list all the files in current directory 
 - `git merge <branch name>` : will merge all the changes from current branch to master 
-<<<<<<< HEAD
   - first do `git checkout master`, then merge the branch
 - `git branch -d <branch name>`:  Remove the local branch after merging it safely
 - `git push -d <remote name> <branch name>` : Deletes the branch remotely 
@@ -91,23 +90,10 @@ When using `git reset --hard HEAD~1`  or `git reset --soft HEAD^`, you will lose
      - its `git fetch` followed by `git merge`
      - Its not gonna update our local repo 
      - It will merge origin/master( remote branch) with master(local)
-  
-=======
-- first do `git checkout master`, then merge the branch
-- `git branch -d <branch name>`:  Remove the local branch after merging it safely
-- `git push -d <remote name> <branch name>` : Deletes the branch remotely 
-- `git rm -r <Directory/folder name/file name>` : Removes the directory local and remote 
-- `git commit -m  "Remove duplicated directory"`
-- `git push origin <your-git-branch> (typically 'master', but not always)`
 
 ## Pull and Fetch Commands
 
 - `git pull` : Fetch or sync local reposirory with remote one
 - its `git fetch` followed by `git merge`
 - Its not gonna update our local repo 
-- It will merge origin/master( remote branch) with master(local)
-
->>>>>>> admin
-
-
-
+- It will merge origin/master( remote branch) with master(local)\
