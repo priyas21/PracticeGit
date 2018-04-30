@@ -83,7 +83,7 @@ When using `git reset --hard HEAD~1`  or `git reset --soft HEAD^`, you will lose
 - `git rm -r <Directory/folder name/file name>` : Removes the directory local and remote 
   - `git commit -m  "Remove duplicated directory"`
   - `git push origin <your-git-branch> (typically 'master', but not always)`
-  
+
 ## Pull and Fetch Commands
 
 - `git pull` : Fetch or sync local reposirory with remote one
