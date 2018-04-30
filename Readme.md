@@ -111,13 +111,14 @@ If we are working on large project which have various versions we can use tags t
  
  ## Rebase
   
- -First Run `git fetch` first which will pull down all the remote changes but does not merge them
-- Then run `git rebase` 
+ - First Run `git fetch` first which will pull down all the remote changes but does not merge them
+ - Then run `git rebase` 
    - Move all changes to master which are not in origin/master to a temporary area
    - Run all origin/master commits
    - Run all commits in temporary area , one at a time on top of master 
    
-   ###Local branch Rebase 
+   ### Local branch Rebase 
+
    1. First checkout local branch : `git checkout <local branch>`
    2. `git rebase master` : It will first run all the master branch commits and then will run all the local branch commits 
    3. `git checkout master` 
