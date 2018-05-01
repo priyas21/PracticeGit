@@ -11,7 +11,7 @@ Git is a distributed version control system; everybody has a copy of repository 
 Open bash profile in atom : atom ~/ .bash_profile
 Open all the files:  ls -la ~/
 Bash Profile : This file is loaded before Terminal loads your shell environment and contains all the startup configuration and preferences for your command line interface.
-
+- `open ~/.gitconfig` : Open git config file and add aliases or any other configurations 
 
 ## Git Commands
 - `git status` :-> to check whats changes since last commit
@@ -22,9 +22,11 @@ Bash Profile : This file is loaded before Terminal loads your shell environment 
 - Will open a default text editor which is vim 
 - Add the comment > then press esc> then write :wq to save and quit the commit message
 - `git log`: to see the history of commits 
-- `git log oneline` : Will show all the commits with their first line message
+- `git log --oneline` : Will show all the commits with their first line message
+- `git log - -onleine - - graph`: show the commits graphically; helpful in merge commits
 - `git show` : WIll show the current HEAD
 - `git show 3b7666e` : Means shows the specified sha /commit
+- `git blame <file name>`: to know who made the commits
 
 ## Different ways to add
 - `git add <list of files>` : add all list of files
@@ -35,9 +37,10 @@ Bash Profile : This file is loaded before Terminal loads your shell environment 
 - `git add “*.txt”` : add all text files in whole project
 ### .......................................................................................................................................................
 
-- `git diff`  : show the unstated differences since last commit; show the lines added and deleted/ modified in the files 
-- `git diff --staged` : View the staged differences 
+- `git diff`  : show the unstated differences since last commit; show the lines added and deleted/ modified in the files  ; see the differences between unstated and staged files
+- `git diff --staged` : View the staged differences ; see the difference between staged files and recent commit
 - `git diff origin/master` : shows all the changes (unstaged and committed from master)
+- `git diff <first commit sha> < second commit sha>` : difference between  two commits 
 - `git reset HEAD <filename>` : Unstage the changes
 - HEAD refers to last commit on the current branch or current timeline 
 - `git checkout — <filename>` : to discard all the changes in the working directory in the specified filename
@@ -66,6 +69,8 @@ When using `git reset --hard HEAD~1`  or `git reset --soft HEAD^`, you will lose
    - Shows the local branches which are configured for `git push`
 - `git push -u origin master` : push the changes to remote repo ; origin is remote repo name and master is local branch name ; - u means next time we use push we don’t have to specify the name of the local branch ; we can do git push 
 - `git pull` : Pull down the changes from the remote 
+- `git init` : Create a repo locally
+- `git init --help` : will show all the commnads
 - `git clone <remote repo url> <local folder name/optional>`
 - git clone https://github.com/PriyaSodhi/Ruby_Tutorial.git demo-repo 
 
@@ -100,6 +105,7 @@ If we are working on large project which have various versions we can use tags t
 - `git rm -r <Directory/folder name/file name>` : Removes the directory local and remote 
   - `git commit -m  "Remove duplicated directory"`
   - `git push origin <your-git-branch> (typically 'master', but not always)`
+  - `git branch -m “ <new branch name>` : Rename branch names
 
 ## Pull and Fetch Commands
 
@@ -118,6 +124,7 @@ If we are working on large project which have various versions we can use tags t
    - Run all commits in temporary area , one at a time on top of master 
    
    ### Local branch Rebase 
+   
    1. First checkout local branch : `git checkout <local branch>`
    2. `git rebase master` : It will first run all the master branch commits and then will run all the local branch commits 
    3. `git checkout master` 
